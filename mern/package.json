@@ -1,0 +1,33 @@
+{
+  "name": "mix",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "build": "cd typing-login-mix && npm run build",
+    "install-client": "cd typing-login-mix && npm install",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm --prefix typing-login-mix&& npm run build --prefix typing-login-mix",
+    "dev": "nodemon app.js",
+    "start": "node app.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "bcrypt": "^5.0.0",
+    "cookie-parser": "^1.4.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.11.9",
+    "passport": "^0.4.1",
+    "passport-jwt": "^4.0.0",
+    "passport-local": "^1.0.0",
+    "portfinder": "^1.0.21",
+    "socket.io": "^3.0.4"
+  },
+  "devDependencies": {
+    "http-proxy-middleware": "^1.0.6"
+  },
+  "keywords": [],
+  "description": ""
+}
