@@ -57,13 +57,13 @@ export default function Navbar(props) {
 
         {/* it's a todos link */}
         <Link to="/todos">
-          <li className="nav-item nav-link">Todos</li>
+          <li className="nav-item nav-link">Matches</li>
         </Link>
 
         {/* since there two roles for a user to be, so if you are an admin you see
         admin page, otherwise, you see null */}
         {user.role === "admin" ? (
-          <Link to="/admin">
+          <Link to="/users">
             <li className="nav-item nav-link">Admin</li>
           </Link>
         ) : null}

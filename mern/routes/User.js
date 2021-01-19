@@ -247,5 +247,44 @@ userRouter.post(
     }
   }
 );
+// admin and users, get all users from the database
+userRouter.get("/users", async (req, res, next) => {
+  // when we find the user, the todo array is only gonna have
+  // primary key within it, but I don't just want primary key,
+  // I want actual data within that todo, so that's what
+  // populate("todos") means
+  // we use exec(()=>{}) to execute it
+  await User.find({})
+    .then((users) => res.json(users))
+    .catch((err) => next(err));
+});
+
+// delete user from database
+userRouter.delete("/:id", async (req, res, next) => {
+  await User.findByIdAndRemove(req.params.id)
+    .then(() => res.json({}))
+    .catch((err) => next(err));
+});
+
+// update the user from user to admin
+userRouter.put("/:id", async (req, res, next) => {
+  // await User.findByIdAndRemove(req.params.id)
+  //   .then(() => res.json({}))
+  //   .catch((err) => next(err));
+
+  const user = await User.findById(req.params.id);
+
+  // validate
+  if (!user) throw "User not found";
+  if (user.role === "admin") {
+    user.role = "user";
+  } else if (user.role === "user") {
+    user.role = "admin";
+  }
+
+  await user.save();
+});
+
+// update the user from user to admin
 
 module.exports = userRouter;

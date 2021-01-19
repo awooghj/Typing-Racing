@@ -10,6 +10,10 @@ import ScoreBoard from "./ScoreBoard";
 import DisplayGameCode from "./DisplayGameCode";
 // import { Link } from "react-router-dom";
 
+// webRTC----------------
+import VideoChat from "./VideoChat";
+// webRTC----------------
+
 const findPlayer = (players) => {
   // this is gonna return the player that matches the socket id
   // that means that this is us
@@ -50,6 +54,7 @@ const TypeRacer = ({ gameState }) => {
       <StartBtn player={player} gameID={_id} />
       <DisplayGameCode gameID={_id} />
       <ScoreBoard players={players} player={player} />
+      <VideoChat />
 
       <Link to="/game/create">
         <button type="button" className="btn btn-primary">

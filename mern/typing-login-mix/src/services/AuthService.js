@@ -68,7 +68,84 @@
 //   isAuthenticated,
 // };
 
+// update the user's role from user to admin
+const degradeUser = (id) => {
+  // findOneAndDelete({ _id: id })
+  // this is a get request because by default it's already a get request
+  return fetch(`/user/${id}`, {
+    method: "put",
+    headers: {
+      "Content-Type": "application/json",
+    },
+  }).then((response) => {
+    // since passport automatically sends a 401 unathorized if you are not
+    // authenticated already, so in order to combat this, what we are gonna
+    //  do is write our won response client side.
+    if (response.status !== 401) {
+      // but if it isn't a 401 request, that
+      // means we already wrote a response on the server side
+      return response.json().then((data) => data);
+    } else return { message: { msgBody: "UnAuthorized", msgError: true } };
+  });
+};
+
+// update the user's role from user to admin
+const upgradeUser = (id) => {
+  // findOneAndDelete({ _id: id })
+  // this is a get request because by default it's already a get request
+  return fetch(`/user/${id}`, {
+    method: "put",
+    headers: {
+      "Content-Type": "application/json",
+    },
+  }).then((response) => {
+    // since passport automatically sends a 401 unathorized if you are not
+    // authenticated already, so in order to combat this, what we are gonna
+    //  do is write our won response client side.
+    if (response.status !== 401) {
+      // but if it isn't a 401 request, that
+      // means we already wrote a response on the server side
+      return response.json().then((data) => data);
+    } else return { message: { msgBody: "UnAuthorized", msgError: true } };
+  });
+};
+
+// UserItem new feature
+const deleteUser = (id) => {
+  // findOneAndDelete({ _id: id })
+  // this is a get request because by default it's already a get request
+  return fetch(`/user/${id}`, {
+    method: "delete",
+  }).then((response) => {
+    // since passport automatically sends a 401 unathorized if you are not
+    // authenticated already, so in order to combat this, what we are gonna
+    //  do is write our won response client side.
+    if (response.status !== 401) {
+      // but if it isn't a 401 request, that
+      // means we already wrote a response on the server side
+      return response.json().then((data) => data);
+    } else return { message: { msgBody: "UnAuthorized", msgError: true } };
+  });
+};
+
+// UserItem new feature------------------------------------
+
 // export default AuthServices;
+// admin new feature
+const getUsers = () => {
+  // this is a get request because by default it's already a get request
+  return fetch("/user/users").then((response) => {
+    // since passport automatically sends a 401 unathorized if you are not
+    // authenticated already, so in order to combat this, what we are gonna
+    //  do is write our won response client side.
+    if (response.status !== 401) {
+      // but if it isn't a 401 request, that
+      // means we already wrote a response on the server side
+      return response.json().then((data) => data);
+    } else return { message: { msgBody: "UnAuthorized", msgError: true } };
+  });
+};
+// admin new feature
 
 const login = (user) => {
   console.log(user);
@@ -125,6 +202,10 @@ const AuthService = {
   register,
   logout,
   isAuthenticated,
+  getUsers,
+  deleteUser, // delte testing
+  upgradeUser, // upgrade role testing
+  degradeUser, // grade role testing
 };
 
 export default AuthService;
