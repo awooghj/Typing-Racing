@@ -33,37 +33,11 @@ mongoose.connect(
   }
 );
 
-// WEB RTC
-const users = {};
-// WEB RTC
-
 // whenever there is a connection happening, this is gonna fire off
 // this function and we should get back the socket
 // it's an event-driven programming, so I give it something to listen
 // for, so once I connect from a client this is gonna get invoke
 io.on("connect", (socket) => {
-  // webRTC -------------------------------------
-  if (!users[socket.id]) {
-    users[socket.id] = socket.id;
-  }
-  socket.emit("yourID", socket.id);
-  io.sockets.emit("allUsers", users);
-  socket.on("disconnect", () => {
-    delete users[socket.id];
-  });
-
-  socket.on("callUser", (data) => {
-    io.to(data.userToCall).emit("hey", {
-      signal: data.signalData,
-      from: data.from,
-    });
-  });
-
-  socket.on("acceptCall", (data) => {
-    io.to(data.to).emit("callAccepted", data.signal);
-  });
-
-  // ---------------webRTC
   socket.on("userInput", async ({ userInput, gameID }) => {
     try {
       let game = await Game.findById(gameID);

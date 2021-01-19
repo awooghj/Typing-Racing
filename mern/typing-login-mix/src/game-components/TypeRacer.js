@@ -8,11 +8,9 @@ import Form from "./Form";
 import ProgressBar from "./ProgressBar";
 import ScoreBoard from "./ScoreBoard";
 import DisplayGameCode from "./DisplayGameCode";
-// import { Link } from "react-router-dom";
+import LeaveGame from "./LeaveGame";
 
-// webRTC----------------
-import VideoChat from "./VideoChat";
-// webRTC----------------
+// import { Link } from "react-router-dom";
 
 const findPlayer = (players) => {
   // this is gonna return the player that matches the socket id
@@ -54,13 +52,7 @@ const TypeRacer = ({ gameState }) => {
       <StartBtn player={player} gameID={_id} />
       <DisplayGameCode gameID={_id} />
       <ScoreBoard players={players} player={player} />
-      <VideoChat />
-
-      <Link to="/game/create">
-        <button type="button" className="btn btn-primary">
-          Back
-        </button>
-      </Link>
+      <LeaveGame player={player} gameID={_id} />
 
       {/* <Link to="/game">
         <button type="button" className="btn btn-primary btn-lg">
