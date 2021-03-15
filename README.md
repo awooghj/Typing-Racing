@@ -6,8 +6,9 @@ Typing racing game is an interactive multiplayer, text-typing game that you coul
 ---
 
 <!-- Code Blocks -->
-In terminal, first you could go to directory **mern**
+In terminal, first you could go to directory **mern** by calling
 ```bash
+  cd mern
   npm install
 ```
 to install libraries for Node.js. After installing, call
