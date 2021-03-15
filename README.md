@@ -2,6 +2,8 @@
 <!-- Italics -->
 Typing racing game is an interactive multiplayer, text-typing game that you could share your room code with friends to join the same competition as you are.
 
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+
 <!-- Horizontal Rule -->
 ---
 
