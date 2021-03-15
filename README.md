@@ -10,7 +10,7 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 ## Installing project
 
 <!-- Code Blocks -->
-#Step 1:
+# Step 1:
 
 In terminal, first you could go to directory **mern** by calling
 ```bash
@@ -19,7 +19,7 @@ In terminal, first you could go to directory **mern** by calling
 ```
 to install libraries for Node.js. 
 
-#Step 2: 
+# Step 2: 
 
 After installing, call
 ```bash
@@ -30,7 +30,7 @@ and again install required libraries for React by calling
   npm install
 ```
 
-#Step 3: 
+# Step 3: 
 
 After intaling, first call 
 ```bash
