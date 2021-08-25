@@ -1,6 +1,6 @@
-# Typing-Racing
+# Typing Racing
 <!-- Italics -->
-Typing racing game is an interactive multiplayer, text-typing game that you could share your room code with friends to join the same competition as you are.
+Typing racing game is an interactive multiplayer, text-typing game that you could share your room code with friends to join the same competition as you are
 
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
@@ -10,7 +10,7 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 ## Installing project
 
 <!-- Code Blocks -->
-# Step 1:
+### Step 1:
 
 In terminal, first you could go to directory **mern** by calling
 ```bash
@@ -19,7 +19,7 @@ In terminal, first you could go to directory **mern** by calling
 ```
 to install libraries for Node.js. 
 
-# Step 2: 
+### Step 2: 
 
 After installing, call
 ```bash
@@ -30,7 +30,7 @@ and again install required libraries for React by calling
   npm install
 ```
 
-# Step 3: 
+### Step 3: 
 
 After intaling, first call 
 ```bash
@@ -42,3 +42,5 @@ in directory **mern**, and then
   npm start
 ```
 to start frontend
+
+## Demo
