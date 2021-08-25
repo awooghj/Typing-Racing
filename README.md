@@ -53,5 +53,14 @@ to start frontend
 ## Demo
 
 ### Register Accounts & Different Permission for Users in Different Classes
+
 https://user-images.githubusercontent.com/71347217/130868535-0cb8efc5-bda7-4a51-a003-d1478b3fcd59.mp4
+
+### In Gaming & After Gaming
+
+https://user-images.githubusercontent.com/71347217/130869503-b6fcb916-db26-4c74-935d-b6385b13167a.mp4
+
+### Multiplayers in Game
+
+https://user-images.githubusercontent.com/71347217/130870383-b421b08e-ef90-4587-a635-d1c2f58c99f1.mp4
 
