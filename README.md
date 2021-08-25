@@ -7,6 +7,13 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 <!-- Horizontal Rule -->
 ---
 
+## Functions
+- The users can register an account to be a member of this game website
+- There are two user classes-one is normal user, the other one is adminstrator
+- The administrator account can manage the accounts of the website such as deleting and upgrading accounts
+- Users who host the room game are able to start any time they want
+- Users will see the ranking and statistic after the game is over
+- The statistics of matches belonging to a user can be found at the "Matches" link, where the ranking, nickname, and word per minute (WPM) are preserved
 ## Installing project
 
 <!-- Code Blocks -->
@@ -44,3 +51,7 @@ in directory **mern**, and then
 to start frontend
 
 ## Demo
+
+### Register Accounts & Different Permission for Users in Different Classes
+https://user-images.githubusercontent.com/71347217/130868535-0cb8efc5-bda7-4a51-a003-d1478b3fcd59.mp4
+
