@@ -54,6 +54,7 @@ to start frontend
 
 ### Register Accounts & Different Permission for Users in Different Classes
 
+##### *The account in the end of the clip is removed so that the page stayed at login page
 https://user-images.githubusercontent.com/71347217/130868535-0cb8efc5-bda7-4a51-a003-d1478b3fcd59.mp4
 
 ### In Gaming & After Gaming
