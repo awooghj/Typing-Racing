@@ -7,14 +7,14 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 <!-- Horizontal Rule -->
 ---
 
-## User Story
-- The users can register an account to be a member of this game website
-- There are two user classes-one is normal user, the other one is adminstrator
-- The administrator account can manage the accounts of the website such as deleting and upgrading accounts
-- Users who host the room game are able to start any time they want
+## User Stories
+- The users can register an account to be a member of this game website securely 
+- There are two user roles that a user could register--one is normal user, the other one is adminstrator
+- The administrator account can manage the accounts of the website such as deleting or upgrading user accounts
+- Users who host the match are able to start the game any time they want
 - Users will see the ranking and statistic after the game is over
 - The statistics of matches belonging to a user can be found at the "Matches" link, where the ranking, nickname, and word per minute (WPM) are preserved
-## Installing project
+## Installing Project
 
 <!-- Code Blocks -->
 ### Step 1:
