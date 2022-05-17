@@ -7,7 +7,7 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 <!-- Horizontal Rule -->
 ---
 
-## Functions
+## User Story
 - The users can register an account to be a member of this game website
 - There are two user classes-one is normal user, the other one is adminstrator
 - The administrator account can manage the accounts of the website such as deleting and upgrading accounts
